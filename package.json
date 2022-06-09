@@ -1,0 +1,27 @@
+{
+  "name": "express-node_ninja",
+  "version": "1.0.0",
+  "description": "sitepoint node.js:novice to ninja",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budski82/express-node_ninja.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/budski82/express-node_ninja/issues"
+  },
+  "homepage": "https://github.com/budski82/express-node_ninja#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
