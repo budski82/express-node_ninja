@@ -9,8 +9,12 @@ const cfg = { port: process.env.PORT || 3000 };
 const app = express();
 
     // home page route
-app.get('/', (req,res)=> {
-    res.send(msg)
+// app.get('/', (req,res)=> {
+//     res.send(msg)
+// });
+let food = ['banana', 'apple', 'cookie']
+app.get('/boo/', (req,res)=> {
+    res.send(`I ate a ${food[0]}`);
 });
 
     // start server
