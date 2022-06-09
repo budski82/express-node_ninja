@@ -19,7 +19,7 @@ app.get('/boo/', (req,res)=> {
 });
 
     // serve static assets
-app.use(express.static(path.join(_dirname, '../public')));
+app.use(express.static( 'static' ));
 
     // start server
 app.listen(cfg.port, ()=> {
