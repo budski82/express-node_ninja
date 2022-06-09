@@ -1,5 +1,6 @@
     // Express Application
 import express from "express";
+import path from "path";
 import msg from './msg.js';
 
     // Config
@@ -16,6 +17,9 @@ let food = ['banana', 'apple', 'cookie']
 app.get('/boo/', (req,res)=> {
     res.send(`I ate a ${food[1]}`);
 });
+
+    // serve static assets
+app.use(express.static(path.join(__dirname, '../public')));
 
     // start server
 app.listen(cfg.port, ()=> {
